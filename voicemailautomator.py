@@ -57,7 +57,7 @@ def processBruteforce(callSID, callStatus, callDuration):
 
 	
 def processChangeGreetingMessage(callStatus, callDuration):
-	if callStatus == "in-progress": print "Updating greeting message..."
+	if callStatus == "in-progress": print ("Updating greeting message...")
 	elif callStatus == "completed":
 		print "Greeting message updated!"
 		server.shutdown()
